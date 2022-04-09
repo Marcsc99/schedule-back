@@ -15,3 +15,4 @@ jobs:
           heroku_app_name: "ein-schedule" #Must be unique in Heroku
           heroku_email: "marc.sanchez.civantos@gmail.com"
           usedocker: true
+          dontuseforce: 1
