@@ -5,7 +5,6 @@ import bodyParser from 'body-parser';
 const app = express();
 import routes from './routes/index.js';
 
-const cors = require('cors');
 const corsOptions ={
     origin:'http://localhost:3000', 
     credentials:true,            //access-control-allow-credentials:true
