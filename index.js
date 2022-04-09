@@ -14,7 +14,7 @@ app.use(cors(corsOptions));
 
 app.use(bodyParser.json());
 
-const server = app.listen(3223, ()=>{
+const server = app.listen(process.env.PORT || 3223, ()=>{
     console.log("App listening port 3223");
 });
 
