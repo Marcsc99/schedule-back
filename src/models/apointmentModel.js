@@ -1,18 +1,18 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
 const ApointmentSchema = new Schema({
-  date: Date,
+  date: {type: Date, required:true},
   iniHour: {
-    hour: Number,
-    minute: Number
+    hour: {type: Number, required:true},
+    minute: {type: Number, required:true}
   },
   finishHour: {
-    hour: Number,
-    minute: Number
+    hour: {type: Number, required:true},
+    minute: {type: Number, required:true}
 },
-  title: String,
-  description: String
+  title: {type: String, required:true},
+  description: {type: String, required:false}
 });
 
 const Apointment = mongoose.model("apointment", ApointmentSchema);
