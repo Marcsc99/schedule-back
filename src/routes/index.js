@@ -3,6 +3,6 @@ import HolidaysRouter from './holidaysRouter.js';
 
 const appRouter = express.Router();
 
-appRouter.use('/holidays', HolidaysRouter);
+appRouter.use('/holiday', HolidaysRouter);
 
 export default appRouter;
