@@ -1,5 +1,5 @@
 import express from 'express';
-import { HolidaysRouter } from './holidaysRouter';
+import HolidaysRouter from './holidaysRouter.js';
 
 const appRouter = express.Router();
 

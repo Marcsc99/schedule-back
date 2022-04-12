@@ -1,9 +1,9 @@
 import fetch from "node-fetch";
 
-const getHolidays = (req,res)=>{
+const getHolidays = (req,res) => {
     const year = req.params.year;
     const country = req.params.country;
-
+    
     fetch(`https://date.nager.at/api/v3/PublicHolidays/${year}/${country}`)
     .then((result)=>{
         return result.json();

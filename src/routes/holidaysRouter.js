@@ -1,8 +1,10 @@
 import express from 'express';
-import { HolidaysController } from '../controllers'
-
+import Controller from '../controllers/index.js'
+const HolidaysController = Controller.HolidaysController.default;
 const HolidaysRouter = express.Router();
 
-router.get('/:year/:country', HolidaysController.getHolidays())
+console.log(HolidaysController.default)
+
+HolidaysRouter.get('/:year/:country', HolidaysController.getHolidays)
 
 export default HolidaysRouter;
