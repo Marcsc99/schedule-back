@@ -14,6 +14,7 @@ const ApointmentSchema = new Schema({
   title: {type: String, required:true},
   description: {type: String, required:false},
   color: {type: String, required:false},
+  textColor: {type: String, required:false},
 });
 
 const Apointment = mongoose.model("apointment", ApointmentSchema);

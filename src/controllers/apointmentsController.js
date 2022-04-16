@@ -6,7 +6,6 @@ const getApointments = async (req,res) => {
 
 const createApointment = async (req, res) => {
     const body = req.body;
-    
     var newApointment = new Apointment(body);
    
     newApointment.save(
